@@ -22,7 +22,6 @@ submitbtn.addEventListener("click", () => {
     .then(response => response.json())
     .then(data => {
         console.log("Cat fact:", data);
-        // Display fact data in Fact div
         Fact.innerHTML = "<h2>Fact</h2>";
         Fact.innerHTML += `<p>${data.fact}</p>`;
     })
